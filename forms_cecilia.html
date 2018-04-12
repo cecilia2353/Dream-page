@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+`	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="forms_cecilia.css" />
+	</head>
+	<body>
+    	<form name="page">
+        	<fieldset>
+            <legend>Choices</legend>
+            <div id="number1">
+            	<fieldset>
+                <legend>Question #1</legend>
+                <p>What is your favorite food?</p>
+                <input type="radio" name="food" value="Pancakes" />Pancakes
+                <br />
+                <input type="radio" name="food" value="Eggs" />Eggs
+                <br />
+                <input type="radio" name="food" value="Tacos"/>Tacos
+                <br />
+                <input type="radio" name="food" value="Steak"/>Steak
+                <br/>
+                <input type="radio" name="food" value="Borritos"/>Borritos
+                <br/>
+                <input type="radio" name="food" value="Fish"/>Fish
+                <br/>
+                <input type="radio" name="food" value="Hotdogs"/>Hotdogs
+                <br/>
+                <input type="radio" name="food" value="Lasagna"/>Lasagna
+                <br/>
+                </fieldset>
+        	</div>
+            <div id="number2">
+            	<fieldset>
+                <legend>Question #2</legend>
+                <p>What is your Favorite pet?</p>
+                <input type="button" name="Pet" value="Bunny" onclick="answerb()" />
+                <br />
+                <input type="button" name="Pet" value="Cat" onclick="answerc()"/>
+                <br />
+                <input type="button" name="Pet" value="Hamster"onclick="answerh()"/>
+                <br />
+                <input type="button" name="Pet" value="Dog" onclick="answerd()"/>
+                <br/>
+                </fieldset>
+        	</div>
+            <div id="number3">
+            	<fieldset>
+                <legend>Question #3</legend>
+                <p>What are your Favorite colors?</p>
+                <input type="checkbox" name="colorB" value="Blue" />Blue
+                <br />
+                <input type="checkbox" name="colorT" value="Turqoise"/>Turqoise
+                <br />
+                <input type="checkbox" name="colorR" value="Rosegold"/>
+                Rose
+                
+                gold <br />
+                <input type="checkbox" name="colorRE" value="Red"/>
+                Red
+                <br/>
+                <input type="checkbox" name="colorG" value="Green"/>Green
+                <br/>
+                <input type="checkbox" name="colorO" value="Orange"/>Orange
+                <br/>
+                <input type="checkbox" name="colorV" value="Violet"/>Violet
+                <br/>
+                <input type="checkbox" name="colorP" value="Purple" />Purple
+                <br/>
+                </fieldset>
+        	</div>
+            <div id="number4">
+            	<fieldset>
+                <legend>Question #4</legend>
+                <p>What is your Favorite Sport?</p>
+                <select name="q4">
+            		<option value="Basket">Basket</option>
+                	<option value="Golf">Golf</option>
+                	<option value="Football">Football</option>
+                	<option value="Baminton">Baminton</option>
+                    <option value="Iceskating">Iceskating</option>
+                    <option value="Tenis">Tenis</option>
+                    <option value="volleyball">volleyball</option>
+            	</select>
+                </fieldset>
+        	</div>
+            <div>
+            	<fieldset>
+                <legend>Question #5</legend>
+                <p>Short quiz suprise!!What is the main color of the football team by the name of Vikings?</p>
+				<input name="q5" type="color"/>
+                </fieldset>
+        	</div>
+            <div >
+            <fieldset>
+            <legend>Question #6</legend>
+        	<p>See if you know the creator of this page, what is her favorite animal?(type the answer in all caps)</p>
+            <input name="q6" type="text" placeholder="Answer here" />
+       		</fieldset>
+        	</div>
+            <div>
+        	<p>Thanks for playing!</p>
+        	<input type="submit" onclick="answerChecker()"/>
+        	</div>
+        </form>
+
+	<script>
+	function answerChecker() {
+		if(document.page.food.value==="Pancakes") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Eggs") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Tacos") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Steak") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Borritos") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Fish") {
+			alert("Fish: Are you a cat?");
+	    }
+		if(document.page.food.value==="Hotdogs") {
+			alert("blah");
+	    }
+		if(document.page.food.value==="Lasagna") {
+			alert("blah");
+	    }
+		if(document.page.colorB.checked===true || document.page.colorT.checked===true ){
+		alert("You wish you could go to the beach, and swim your worries away")
+		}
+    }
+	function answerb(){
+		alert("they are fluffy and cute, therefore i appreciate you");
+	}
+	function answerc(){
+		alert("My favorite animal ever, even tho they are super evil");
+	}
+	function answerh(){
+		alert("i like seeds :3");
+	}
+	function answerd(){
+		alert("Aarthi loves them, and she's super evil! MUHAHAHAHA!!! (just kidding i love you Aarthi <3)");
+	}
+	</script>
+		
+
+
+	</body>
+</html>
